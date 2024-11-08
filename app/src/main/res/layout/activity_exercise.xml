@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/myGColor"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/infoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select an Exercise Type:" />
+
+    <RadioGroup
+        android:id="@+id/exerciseTypeRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/cardio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cardio" />
+
+        <RadioButton
+            android:id="@+id/strength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Strength Training" />
+
+        <RadioButton
+            android:id="@+id/flexibility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flexibility Exercises" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/showSelectedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/myRedColor"
+        android:text="Show Selected Info" />
+</LinearLayout>
